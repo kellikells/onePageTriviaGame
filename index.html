@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Timed Trivia Game</title>
 
-    <!-- reset css --> <!--check href for reset.css file is correct-->
+    <!-- reset css -->
+    <!--check href for reset.css file is correct-->
     <link rel="stylesheet" href="assets/css/reset.css">
 
     <!-- jquery script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 
     <!--my links-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -19,21 +26,25 @@
 
 
 <body>
-    
-<header>
-    <h1> Pokemon Go! </h1>
-    <p>It's timed trivia! Let's GO!</p>
-</header>
 
-<div id="timer"></div>
-
-<table>
-</table>
+    <div>
+        <header>
+            <h1> Random Facts Trivia </h1>
+            <p>(questions you probably don't know the answer to, with a timer)</p>
+        </header>
+    </div>
 
 
+    <div class="container trivia-space">
+
+        <button id="startButton">Start</button>
+
+    </div>
 
 
-<script type="text/javascript" src="script.js"></script>
+    <!-- my javascript -->
+    <script type="text/javascript" src="assets/javascript/script.js"></script>
 
 </body>
+
 </html>
