@@ -36,7 +36,7 @@ const trivia = [{
     question: 'Pokemon Go was spurred by an April Fool\'s joke in ____.  The joke was a job posting for a Pokemon Master and the idea of players exploring a map catching pokemon',
     answers: ['2007', '2010', '2014'],
     correct: '2014'
-};
+}];
 
 
 // =========== Hiding the "submit" input =========
@@ -46,7 +46,7 @@ $(document).ready(function () {
 
 /// ================ TIMER =======================
 
-let initialTime = 90;
+let initialTime = 60;
 let gameTimer;
 
 function startTimer() {
@@ -55,8 +55,8 @@ function startTimer() {
 
 function decrement() {
     initialTime--;
-    $("#trivia-space").prepend("Time left: " + initialTime);
-    console.log(initialTime);
+    $("#timer").text("Time left: " + initialTime);
+    // console.log(initialTime);
 }
 
 // to stop the timer 
@@ -104,6 +104,7 @@ $("#startButton").on("click", function () {
 
 // ========= FUNCTION: SUBMIT --- LOGIC =========
 $("#submitButton").on("click", function () {
+    stopTimer();
     for (let i = 0; i < trivia.length; i++);
     console.log(trivia.length);
 
