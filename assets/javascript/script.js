@@ -55,7 +55,7 @@ function startTimer() {
 
 function decrement() {
     initialTime--;
-    $("#timer").text("Time left: " + initialTime);
+    $("#timer").text(initialTime + " seconds to answer `em all");
     // console.log(initialTime);
 }
 

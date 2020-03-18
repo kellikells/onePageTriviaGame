@@ -1,7 +1,73 @@
 * {
-    box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+body {
+     margin: 0 auto;
+     text-align: center;
+}
+
+#header {
+     margin: 10px 0px 40px 0px;
+}
+
+h1 {
+     font-family: "Luckiest Guy", cursive;
+     font-size: 4.5rem;
+}
+
+h3 {
+     /* font-family: 'Rock Salt', cursive; */
+     font-family: "Bungee Inline", cursive;
+}
+
+#button-space {
+     margin-top: 20px;
+     font-family: "Lalezar", cursive;
+}
+
+#timer {
+     font-family: "Boogaloo", cursive;
+     color: red;
+}
+
+#trivia-space {
+     text-align: left;
+}
+
+h4 {
+     /* font-family: 'Boogaloo', cursive; */
+     /* font-family: 'Luckiest Guy', cursive; */
+     font-family: "Bungee Inline", cursive;
+     font-size: 1rem;
+     margin-top: 20px;
+}
+
+input {
+     margin-left: 35px;
 }
 
 p {
-    margin: 1rem 0 0 0;
+     margin: 0;
+}
+
+#footer {
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     text-align: center;
+}
+
+#stats {
+     color: grey;
+     background-color: white;
+     font-family: "Boogaloo", cursive;
+     padding: 15px 0 10px;
+}
+
+footer {
+     color: white;
+     background-color: grey;
+     padding: 10px 0;
+     font-family: "Rock Salt", cursive;
 }

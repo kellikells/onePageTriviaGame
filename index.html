@@ -18,20 +18,25 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Boogaloo|Lalezar|Bungee+Inline|Luckiest+Guy|Passion+One|Pathway+Gothic+One|Patua+One|Rock+Salt|Sanchez|Teko&display=swap"
+        rel="stylesheet">
+
     <!--my links-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
-    <div>
+    <div id="header">
         <header>
             <h1>Pokemon Go:</h1>
             <h3>Stats & Facts</h3>
-            <p>30 seconds to answer `em all!</p>
         </header>
+        <div class="container" id='timer'></div>
     </div>
-<div class = "container" id = 'timer'></div>
+
     <div class="container" id="trivia-space"></div>
 
     <div id="button-space">
@@ -39,11 +44,10 @@
         <input id="submitButton" type="submit" value="Submit">
     </div>
 
-    <div>
-        <p>(These stats are from beano.com, January 2020 & thefactsite.com March 2020)</p>
-    </div>
 
-    <div>
+    <div id="footer">
+         <p id="stats">(These stats are from beano.com, January 2020 & thefactsite.com March 2020)</p>
+       
         <footer>
             <p>Created by Pokemon Master: Kelli</p>
         </footer>
