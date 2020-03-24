@@ -39,11 +39,6 @@ const trivia = [{
 }];
 
 
-// =========== Hiding the "submit" input =========
-$(document).ready(function () {
-    $("#submitButton").hide();
-});
-
 /// ================ TIMER =======================
 
 let initialTime = 60;
@@ -65,6 +60,12 @@ function stopTimer() {
 }
 
 
+// =========== Hiding the "submit" input & footer =========
+$(document).ready(function () {
+    $("#submitButton").hide();
+    $("#footer").hide();
+});
+
 // ========= FUNCTION: start button click ==========
 // -- hides start button & shows submit 'button'
 // -- creates & starts a timer 
@@ -73,18 +74,16 @@ function stopTimer() {
 $("#startButton").on("click", function () {
 
     $("#startButton").hide();
+    // $("#inputs").show();
     $("#submitButton").show();
 
-
-
     startTimer();
-
 
     // --- loop through array of questions/answers 
     for (let i = 0; i < trivia.length; i++) {
 
         let oneQuestion = trivia[i].question;
-        console.log(oneQuestion);
+        // console.log(oneQuestion);
 
         // -- putting the question to DOM
         $("#trivia-space").append("<h4>" + oneQuestion + "</h4>");
@@ -93,22 +92,39 @@ $("#startButton").on("click", function () {
         for (let j = 0; j < trivia[i].answers.length; j++) {
 
             let oneAnswer = trivia[i].answers[j];
-            console.log(oneAnswer);
+            // console.log(oneAnswer);
 
             // -- putting answers to DOM
-            $("#trivia-space").append("<input type='radio' name='question-" + i + "' value='" + oneAnswer + "'/>" + oneAnswer);
+            $("#trivia-space").append("<input type='radio' name='answer-" + i + "' value='" + oneAnswer + "'/>" + oneAnswer);
         }
     }
+    $("#footer").show();
+
 });
 
 
 // ========= FUNCTION: SUBMIT --- LOGIC =========
 $("#submitButton").on("click", function () {
     stopTimer();
-    for (let i = 0; i < trivia.length; i++);
-    console.log(trivia.length);
+    $("#trivia-space").hide();
 
-})
+    // for (let i = 0; i < trivia.length; i++) {
+    //     let oneQuestion = trivia[i].question;
+    //     for (let j = 0; j < trivia[i].answers.length; j++) {
+
+    //         let oneAnswer = trivia[i].answers[j];
+    //     let chosenAnswer = $(input).attr('name');
+        // .attr("data-value");
+
+        // if (chosenAnswer === trivia[i].correct) {
+        //     correct++;
+        // } else if (chosenAnswer != trivia[i].correct) {
+        //     incorrect++;
+        // } else {
+        //     unanswered++;
+        // }
+    }
+)
 
 
 

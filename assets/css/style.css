@@ -5,6 +5,8 @@
 body {
      margin: 0 auto;
      text-align: center;
+     padding-bottom: 60px;
+     /* background-image: url("../images/desktop_background.jpg"); */
 }
 
 #header {
@@ -13,15 +15,16 @@ body {
 
 h1 {
      font-family: "Luckiest Guy", cursive;
-     font-size: 4.5rem;
+     font-size: 3.5rem;
 }
 
 h3 {
      /* font-family: 'Rock Salt', cursive; */
      font-family: "Bungee Inline", cursive;
+     font-size: 100%;
 }
 
-#button-space {
+#buttons {
      margin-top: 20px;
      font-family: "Lalezar", cursive;
 }
@@ -36,10 +39,8 @@ h3 {
 }
 
 h4 {
-     /* font-family: 'Boogaloo', cursive; */
-     /* font-family: 'Luckiest Guy', cursive; */
      font-family: "Bungee Inline", cursive;
-     font-size: 1rem;
+     font-size: 80%;
      margin-top: 20px;
 }
 
@@ -51,23 +52,22 @@ p {
      margin: 0;
 }
 
-#footer {
-     position: fixed;
-     bottom: 0;
-     width: 100%;
-     text-align: center;
-}
-
 #stats {
      color: grey;
      background-color: white;
      font-family: "Boogaloo", cursive;
-     padding: 15px 0 10px;
+     padding: 15px 0 10px 0;
 }
 
-footer {
+#footer {
      color: white;
      background-color: grey;
-     padding: 10px 0;
+     padding: 10px;
      font-family: "Rock Salt", cursive;
+     font-size: 50%;
+     bottom: 0;
+     width: 100%;
+     text-align: center;
+     margin-top: 20px;
+     opacity: 50%;
 }
